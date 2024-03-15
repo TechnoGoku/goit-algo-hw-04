@@ -25,6 +25,7 @@ def get_cats_info(path) -> list:
 
 cats_info = get_cats_info("C:/Users/User/Desktop/home_work_4/home_work_task_2/pets.txt")
 indent = '   '
-formatted = f"[\n{indent}" + f",\n{indent}".join(map(str, cats_info)) + '\n]'
+formatted = f"[\n{indent}" + f",\n{indent}".join(map(str, cats_info)) + '\n]' # тут мені підказали, як перенести словник на нову строку, я не зміг знайти іншого рішення. 
 print(formatted)
+
 
