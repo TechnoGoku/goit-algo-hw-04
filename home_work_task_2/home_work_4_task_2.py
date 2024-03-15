@@ -1,5 +1,4 @@
 from pathlib import Path
-import re
 
 def get_cats_info(path) -> list:
     try:
@@ -16,7 +15,7 @@ def get_cats_info(path) -> list:
                     pet_id = pets_list_info[i]
                     pet_name = pets_list_info[i+1]
                     pet_age = pets_list_info[i+2]
-                    pets_list.append({'id': pet_id, 'name': pet_name, 'age': pet_age})
+                    pets_list.append({'id': pet_id, 'name': pet_name, 'age': pet_age, })
             
             return pets_list
     except FileNotFoundError:
@@ -25,4 +24,7 @@ def get_cats_info(path) -> list:
 
 
 cats_info = get_cats_info("C:/Users/User/Desktop/home_work_4/home_work_task_2/pets.txt")
-print(cats_info)
+indent = '   '
+formatted = f"[\n{indent}" + f",\n{indent}".join(map(str, cats_info)) + '\n]'
+print(formatted)
+
