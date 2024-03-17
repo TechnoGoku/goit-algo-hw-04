@@ -24,11 +24,3 @@ def total_salary(path):
 
 
 total, average = total_salary('C:/Users/User/Desktop/home_work_4/home_work_task_1/document.txt') 
-
-
-
-
-
-
-
-

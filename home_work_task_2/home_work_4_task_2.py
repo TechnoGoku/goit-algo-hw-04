@@ -27,6 +27,3 @@ def get_cats_info(path) -> list:
 cats_info = get_cats_info("C:/Users/User/Desktop/home_work_4/home_work_task_2/pets.txt")
 pprint(cats_info)
 
-
-
-
