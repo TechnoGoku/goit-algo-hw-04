@@ -23,4 +23,4 @@ def total_salary(path):
         print("Документ не знайдено!")
 
 
-total, average = total_salary('C:/Users/User/Desktop/home_work_4/home_work_task_1/document.txt') 
+total, average = total_salary('/Users/User/Desktop/home_work_4/home_work_task_1/document.txt') 
