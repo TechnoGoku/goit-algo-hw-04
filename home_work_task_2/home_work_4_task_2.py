@@ -2,6 +2,7 @@ from pathlib import Path
 from pprint import pprint
 
 def get_cats_info(path) -> list:
+    path = Path(__file__).parent / path
     try:
         with open(path, 'r', encoding='utf-8') as pets:
             pets_file = pets.read()
@@ -24,6 +25,6 @@ def get_cats_info(path) -> list:
 
 
 
-cats_info = get_cats_info("/Users/User/Desktop/home_work_4/home_work_task_2/pets.txt")
+cats_info = get_cats_info("pets.txt")
 pprint(cats_info)
 
