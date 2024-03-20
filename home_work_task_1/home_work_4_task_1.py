@@ -2,6 +2,8 @@ from pathlib import Path
 import re
 
 def total_salary(path):
+    path = Path(__file__).parent / path
+    print(path)
     try:
         with open(path, 'r', encoding='utf-8') as document:
             document_file = document.read()
@@ -21,6 +23,7 @@ def total_salary(path):
             return total, average         
     except FileNotFoundError:
         print("Документ не знайдено!")
+        return None, None
 
 
-total, average = total_salary('/Users/User/Desktop/home_work_4/home_work_task_1/document.txt') 
+total, average = total_salary('document.txt') 
