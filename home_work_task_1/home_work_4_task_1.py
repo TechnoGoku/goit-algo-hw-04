@@ -10,7 +10,7 @@ def total_salary(path):
             document_info = document_file.splitlines()
             for doc in document_info:
                 if doc.strip:
-                    doc.strip
+                    doc.strip()
             numbers_str = re.findall(r"\d+", document_file)
             numbers = []
             for num_str in numbers_str:
